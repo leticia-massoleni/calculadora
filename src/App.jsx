@@ -8,12 +8,10 @@ export default function App(){
 
   const getValor1 = (e) => {
     setValor1(Number(e.target.value));
-    console.log(e.target.value);
   };
 
   const getValor2 = (e) => {
     setValor2(Number(e.target.value));
-    console.log(e.target.value);
   };
 
   const soma = () => {
@@ -34,10 +32,12 @@ export default function App(){
       <h1>Calculadora</h1>
       <input type="number" placeholder="Digite o primeiro número" onChange={getValor1}></input>
       <input type="number" placeholder="Digite o segundo número" onChange={getValor2}></input>
-      <button onClick={soma}> + </button>
-      <button onClick={subtracao}> - </button>
-      <button onClick={multiplicacao}> x </button>
-      <button onClick={divisao}> / </button>
+      <section className="button-container">
+        <button onClick={soma}> + </button>
+        <button onClick={subtracao}> - </button>
+        <button onClick={multiplicacao}> x </button>
+        <button onClick={divisao}> / </button>
+      </section>
       <h3>{result}</h3>
     </main>
   )

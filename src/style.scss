@@ -3,3 +3,72 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgba(236, 65, 133, 0.249);
+    height: 100vh;
+    main{
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+            color: rgb(159, 59, 99);
+        }
+        input{
+            width: 26vw;
+            height: 5vh;
+            text-align: center;
+            color: rgb(159, 59, 99);
+            font-size: 1.2rem;
+            border: 2px solid #5305644f;
+            border-radius: 15px;
+        }
+        button{
+            width: 3vw;
+            height: 2vw;
+            margin-left: 5px;
+            color: purple;
+            border: 2px solid #5305644f;
+            border-radius: 15px;
+        }
+        h3{
+            color: rgb(159, 59, 99);
+            font-size: 1.5rem;
+        }
+    }
+}
+@media (max-width: 1100px){
+    body{
+        main{
+            input{
+                width: 35vw;
+            }
+            button{
+                width: 9vw;
+                height: 4vh;
+            }
+            h3{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    body{
+        main{
+            input{
+                width: 50vw;
+            }
+            button{
+                width: 9vw;
+                height: 4vh;
+            }
+            h3{
+                font-size: 2rem;
+            }
+        }
+    }
+}
